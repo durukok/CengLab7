@@ -53,7 +53,7 @@ public class BST {
             node.right = deleteRec(node.right, key);
         } else {   // node to delete found // key == node.val
             if (node.left == null && node.right == null) return null;
-            if (node.left == null) return node.right; // if righ child exist
+            if (node.left == null) return node.right; // if right child exist
             if (node.right == null) return node.left; // if left child exist
             Node succ = minNode(node.right); //35
             node.val = succ.val; // copy successor value
@@ -64,9 +64,25 @@ public class BST {
 
     public Node minNode(Node node) {
         Node cur = node;
-        while (cur.left != null) cur = cur.left;
+        while (cur.left != null) {
+            cur = cur.left;
+        }
         return cur;
     }
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

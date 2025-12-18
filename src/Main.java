@@ -11,5 +11,10 @@ public class Main{
         tree.insert(userNum);
 
         System.out.println("BST after inserting " + userNum + ":");
+        //found 45
+        System.out.println("Search 45: " + (tree.search(45) ? "Found" : "Not found"));
+        //delete 30
+        tree.delete(30);
+        System.out.println(" BST after deleting 30:");
     }
 }
