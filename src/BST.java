@@ -19,7 +19,7 @@ public class BST {
                 }
                 cur = cur.left;
                 ; //If the left child is not empty, the cur pointer moves down to the left child, and the loop repeats, checking the new current node
-            }   else{  //Go Right Subtree
+            }else{  //Go Right Subtree
                 if (cur.right == null) {
                     cur.right = new Node(v);
                     return;
